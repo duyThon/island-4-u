@@ -1,0 +1,9 @@
+.homepage-bg {
+    background-image: url(../assets/home-bg/danangbeach.jpg);
+
+}
+
+.homepage-bg .waves {
+    background-image: url(../assets/home-bg/danangbeach-waves.png);
+    filter: url("#turbulence");
+}
