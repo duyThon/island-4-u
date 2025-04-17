@@ -4,8 +4,8 @@ import "../styles/home.css";
 const HomeHeader = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 homepage-bg w-screen h-screen bg-cover bg-center">
-        <div className="absolute top-0 left-0 waves w-screen h-screen bg-cover bg-center"></div>
+      <div className="absolute top-0 left-0 homepage-bg w-full h-full bg-cover bg-center">
+        <div className="absolute top-0 left-0 waves w-full h-full bg-cover bg-center"></div>
       </div>
       <svg>
         <filter id="turbulence" x="0" y="0" width="100%" height="100%">

@@ -7,3 +7,30 @@
     background-image: url(../assets/home-bg/danangbeach-waves.png);
     filter: url("#turbulence");
 }
+
+.swiper-button-prev, 
+.swiper-button-next {
+  color: #fff !important;
+  transition: 0.3s ease;
+  transform: scale(0.4);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(0.5);
+}
+
+.section6-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  font-size: 30px;
+  height: 80px;
+  background-color: transparent;
+}
+
+.section6-input:focus {
+  outline: none;
+}
