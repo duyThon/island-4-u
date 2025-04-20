@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/navbar.css";
 import logo from "../assets/navbar/navbar-logo.png";
 import phone from "../assets/social/phone.png";
@@ -6,17 +6,25 @@ import mail from "../assets/social/mail.png";
 import linkin from "../assets/social/linkin.png";
 import github from "../assets/social/github.png";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
+
   const handleNavClick = (type) => {
     const params = new URLSearchParams({ type });
     navigate(`/islands?${params.toString()}`);
   };
 
-  const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <>
       <div
@@ -34,36 +42,6 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[40px] tracking-wide">
-            <li>
-              <Link
-                to="/about"
-                className="group relative inline-block overflow-hidden transition text-white"
-              >
-                About Us
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="group relative inline-block overflow-hidden transition text-white"
-              >
-                Contact
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/services"
-                className="group relative inline-block overflow-hidden transition text-white"
-              >
-                Services
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
-              </Link>
-            </li>
-          </ul>
-
           <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[40px] tracking-wide">
             <li>
               <a
@@ -85,6 +63,36 @@ const Navbar = () => {
             </li>
           </ul>
 
+          <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[40px] tracking-wide">
+            <li>
+              <Link
+                to="/about"
+                className="group relative inline-block overflow-hidden transition text-white"
+              >
+                About Us
+                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="group relative inline-block overflow-hidden transition text-white"
+              >
+                Contact
+                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+              </Link>
+            </li>
+            {/* <li>
+              <Link
+                to="/services"
+                className="group relative inline-block overflow-hidden transition text-white"
+              >
+                Services
+                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+              </Link>
+            </li> */}
+          </ul>
+
           {/* mobile */}
           <button
             onClick={toggleMenu}
@@ -104,22 +112,22 @@ const Navbar = () => {
           >
             <ul className="space-y-6 text-lg font-playfair text-center">
               <li>
-                <Link
-                  to="/island"
-                  className="group relative inline-block overflow-hidden transition text-white"
+                <a
+                  className="group relative inline-block overflow-hidden transition text-white "
+                  onClick={() => handleNavClick("rent")}
                 >
                   Island For Rent
                   <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="/island"
-                  className="group relative inline-block overflow-hidden transition text-white"
+                <a
+                  className="group relative inline-block overflow-hidden transition text-white "
+                  onClick={() => handleNavClick("sale")}
                 >
                   Island For Sale
                   <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
-                </Link>
+                </a>
               </li>
             </ul>
             <ul
@@ -144,7 +152,7 @@ const Navbar = () => {
                   <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/services"
                   className="group relative inline-block overflow-hidden transition text-white"
@@ -152,7 +160,7 @@ const Navbar = () => {
                   Services
                   <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
 
             <ul

@@ -61,20 +61,20 @@ export default function Testimonials() {
 
   return (
     <div className="relative w-full">
-      <div className="h-[800px]">
+      <div className="hidden md:block h-[800px]">
         <img
           src={bg}
           className="fixed top-0 left-0 object-cover will-change-transform z-[-1]"
         />
       </div>
-      <div className="grid grid-cols-12 bg-white">
+      <div className="grid grid-cols-12 bg-white px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px] lg:pl-[200px]">
         {/* LEFT: Description */}
-        <div className="col-span-6 flex items-start flex-col pt-[100px] pl-[200px]">
-          <h2 className="text-[60px] font-playfair tracking-wider leading-none">
+        <div className="col-span-12 md:col-span-6 flex items-start flex-col">
+          <h2 className="text-[40px] lg:text-[60px] text-center md:text-start font-playfair tracking-wider leading-none">
             Your Dream
-            <br /> Getaway Awaits.
+            <br className="hidden md:block" /> Getaway Awaits.
           </h2>
-          <p className="text-[20px] leading-[2] font-playfair  pt-[40px] pr-[200px] tracking-wide">
+          <p className="text-[12px] lg:text-[20px] leading-[2] font-playfair p-0 pt-[20px] md:pt-[40px] md:pr-[100px] lg:pr-[200px] tracking-wide">
             White sand beneath your feet. A warm breeze blowing through your
             hair. An underwater wonderland waiting to be explored. There’s a
             little bit of magic in these islands, and it’s been drawing visitors
@@ -85,11 +85,14 @@ export default function Testimonials() {
         </div>
 
         {/* RIGHT: Testimonials */}
-        <div className="absolute -top-[200px] col-span-4 text-white bg-primary p-[50px] shadow-md relative overflow-hidden flex flex-col justify-center items-center">
-          <h2 className="text-[40px] font-playfair tracking-wider leading-none">
+        <div className="absolute top-[40px] md:-top-[200px] col-span-12 md:col-span-6 lg:col-span-4 text-white bg-primary p-[20px] md:p-[50px] shadow-md relative overflow-hidden flex flex-col justify-center items-center">
+          <h2 className="text-[28px] md:text-[40px] font-playfair tracking-wider leading-none">
             TESTIMONIALS
           </h2>
-          <img className="section5-logo w-[300px] m-[80px]" src={logo} />
+          <img
+            className="section5-logo w-[150px] m-[40px] md:w-[300px] md:m-[80px]"
+            src={logo}
+          />
           <Swiper
             modules={[Navigation, Autoplay, EffectFade]}
             effect="fade"
@@ -110,10 +113,10 @@ export default function Testimonials() {
                   ref={(el) => (contentRefs.current[index] = el)}
                   className="opacity-0 transition-opacity duration-300"
                 >
-                  <p className="text-white text-[22px] italic mx-[60px] text-center">
+                  <p className="text-white text-[14px] md:text-[22px] italic mx-[40px] md:mx-[60px] text-center">
                     "{review.text}"
                   </p>
-                  <p className="text-white text-[20px] italic m-[60px] text-end">
+                  <p className="text-white text-[12px] md:text-[20px] italic m-[40px] md:m-[60px] text-end">
                     — {review.name}
                   </p>
                 </div>
@@ -121,7 +124,7 @@ export default function Testimonials() {
             ))}
           </Swiper>
         </div>
-        <div className="col-span-2"></div>
+        <div className="hidden lg:col-span-2"></div>
       </div>
     </div>
   );

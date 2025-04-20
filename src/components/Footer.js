@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer bg-primary">
-        <div className="footer-container flex flex-col justify-center items-center px-[30px] md:px-[50px] lg:px-[100px] py-[50px] space-y-[40px] md:space-y-[80px]">
+        <div className="footer-container flex flex-col justify-center items-center px-[30px] md:px-[50px] lg:px-[100px] py-[50px] space-y-[20px] md:space-y-[80px]">
           <div className="footer-top w-full flex items-center grid grid-cols-12">
             <div className="footer-logo col-span-12 md:col-span-6 flex justify-center md:justify-start">
               <img src={logo} />
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
           <div className="footer-end w-full flex justify-between items-center grid grid-cols-12 space-y-[20px]">
             <div className="footer-copyright col-span-12 order-2 md:order-1 md:col-span-8 pt-[20px] md:pt-0">
-              <div className="text-start font-roboto text-mix text-[14px] md:text-[22px]">
+              <div className="text-center md:text-start font-roboto text-mix text-[14px] md:text-[22px]">
                 NGUYEN DUY THONG © 2025. All rights reserved.
               </div>
             </div>
@@ -97,25 +97,25 @@ const Footer = () => {
                 >
                   <li>
                     <img
-                      className="brightness-0 transition duration-300 hover:brightness-100 cursor-pointer"
+                      className="brightness-100 transition duration-300 hover:brightness-50 cursor-pointer"
                       src={github}
                     />
                   </li>
                   <li>
                     <img
-                      className="brightness-0 transition duration-300 hover:brightness-100 cursor-pointer"
+                      className="brightness-100 transition duration-300 hover:brightness-50 cursor-pointer"
                       src={mail}
                     />
                   </li>
                   <li>
                     <img
-                      className="brightness-0 transition duration-300 hover:brightness-100 cursor-pointer"
+                      className="brightness-100 transition duration-300 hover:brightness-50 cursor-pointer"
                       src={linkin}
                     />
                   </li>
                   <li>
                     <img
-                      className="brightness-0 transition duration-300 hover:brightness-100 cursor-pointer"
+                      className="brightness-100 transition duration-300 hover:brightness-50 cursor-pointer"
                       src={phone}
                     />
                   </li>

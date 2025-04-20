@@ -20,6 +20,10 @@
   transform: scale(0.5);
 }
 
+textarea {
+  height: 130px !important;
+}
+
 .section6-input {
   padding: 8px;
   display: block;
@@ -33,4 +37,15 @@
 
 .section6-input:focus {
   outline: none;
+}
+
+@media screen and (max-width: 40rem) { 
+  .section6-input {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  textarea {
+    height: 80px !important;
+  }
 }

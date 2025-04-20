@@ -1,11 +1,13 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import { fetchIslands } from "../utils/fetchIslands";
+import { handleSearch } from "../utils/handleSearch";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import HomePageSection6 from "../components/home-page/HomePageSection6";
 import IslandCard from "../components/IslandCard";
 import SearchFilter from "../components/SearchFilter";
-import { handleSearch } from "../utils/handleSearch";
+import PageTransition from "../components/PageTransition";
 import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 import img1 from "../assets/islands-list/1.jpg";
 
@@ -59,18 +61,18 @@ const IslandsList = ({ dataIslandDetail }) => {
   };
 
   return (
-    <>
-      <div className="h-[60vh] overflow-hidden relative">
+    <PageTransition>
+      <div className="h-[30vh] md:h-[60vh] overflow-hidden relative">
         <img src={img1} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="absolute inset-0 flex items-center justify-center text-white font-playfair text-[80px]">
+        <div className="absolute inset-0 flex items-center justify-center text-white font-playfair text-[30px] md:text-[60px] lg:text-[80px]">
           {type === "rent"
             ? "Find Your Next Island Vacation"
             : "Find Your Private Island"}
         </div>
       </div>
 
-      <div className="islands-list-container grid grid-cols-12 gap-[40px] p-[100px]">
+      <div className="islands-list-container grid grid-cols-12 md:gap-[40px] px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px]">
         <div className="islands-filter col-span-12 md:col-span-3 relative">
           <div className="islands-filter-container md:sticky md:top-[150px]">
             <SearchFilter
@@ -82,8 +84,8 @@ const IslandsList = ({ dataIslandDetail }) => {
         <div ref={resultsRef} className="col-span-12 md:col-span-9">
           {filteredIslands && filteredIslands.length > 0 ? (
             <>
-              <div className="islands-list-result-inputsearch flex items-center pb-[20px]">
-                <p className="text-dark text-[40px] font-roboto">
+              <div className="islands-list-result-inputsearch flex items-center pt-[20px] md:pt-0 pb-[20px]">
+                <p className="text-dark text-[20px] md:text-[40px] font-roboto">
                   {filteredIslands.length <= 6 ||
                   visibleCount >= filteredIslands.length ? (
                     <>
@@ -148,13 +150,15 @@ const IslandsList = ({ dataIslandDetail }) => {
               )}
             </>
           ) : (
-            <p className="font-playfair text-gray text-[30px] text-center">
+            <p className="font-playfair text-gray text-[30px] text-center py-[50px]">
               No islands were found matching your selection.
             </p>
           )}
         </div>
       </div>
-    </>
+
+      <HomePageSection6 />
+    </PageTransition>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "../styles/home.css";
 import gsap from "gsap";
 
+import PageTransition from "../components/PageTransition";
 import HomeHeader from "../components/HomeHeader";
 import Hero from "../components/HeroSection";
 import HomePageSection2 from "../components/home-page/HomePageSection2";
@@ -35,8 +36,8 @@ const Home = () => {
     );
   }, []);
   return (
-    <>
-      <div className="home-header w-screen h-screen overflow-hidden">
+    <PageTransition>
+      <div className="home-header w-screen h-screen overflow-hidden relative">
         <Hero />
         <HomeHeader />
 
@@ -75,7 +76,7 @@ const Home = () => {
 
       {/* section-6 */}
       <HomePageSection6 />
-    </>
+    </PageTransition>
   );
 };
 

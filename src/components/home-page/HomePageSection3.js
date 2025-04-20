@@ -18,17 +18,17 @@ const HomePageSection3 = () => {
 
   return (
     <>
-      <section className="section3 w-screen p-[100px] bg-sky">
+      <section className="section3 w-screen px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px] bg-sky">
         <div className="section3-container">
           <div className="flex flex-col justify-center items-center space-y-[24px]">
-            <h3 className="text-dark text-[20px] font-playfair tracking-wide font-bold">
+            <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide font-bold">
               FOR RENT
             </h3>
-            <h2 className="text-dark text-[60px] font-playfair tracking-wide leading-none">
+            <h2 className="text-dark text-[40px] lg:text-[60px] font-playfair tracking-wide leading-none">
               Trending Islands
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[40px] pt-[60px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[40px] pt-[40px] md:pt-[60px]">
             {rentIslands.map((island) => (
               <IslandCard key={island.id} island={island} inDetailPage={true} />
             ))}
@@ -39,15 +39,15 @@ const HomePageSection3 = () => {
             </button>
           </div>
 
-          <div className="flex flex-col justify-center items-center space-y-[24px] pt-[100px]">
-            <h3 className="text-dark text-[20px] font-playfair tracking-wide font-bold">
+          <div className="flex flex-col justify-center items-center space-y-[24px] pt-[50px] md:pt-[100px]">
+            <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide font-bold">
               FOR SALE
             </h3>
-            <h2 className="text-dark text-[60px] font-playfair tracking-wide leading-none">
+            <h2 className="text-dark text-[40px] lg:text-[60px] font-playfair tracking-wide leading-none">
               Trending Islands
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px] pt-[60px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[40px] pt-[40px] md:pt-[60px]">
             {saleIslands.map((island) => (
               <IslandCard key={island.id} island={island} inDetailPage={true} />
             ))}

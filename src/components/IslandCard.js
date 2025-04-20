@@ -33,7 +33,7 @@ const IslandCard = ({ island, inDetailPage = false }) => {
               className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
             />
           </div>
-          <div className="p-[40px]">
+          <div className="p-[20px] md:p-[40px]">
             <h3 className="text-[30px] text-dark font-playfair tracking-wider leading-none hover:text-red transition-colors duration-300 pb-[20px]">
               {island.name}
             </h3>
@@ -48,8 +48,16 @@ const IslandCard = ({ island, inDetailPage = false }) => {
               >
                 <span className="text-dark">Type</span> For {island.type}
               </p>
-              <p className="flex justify-between py-[14px]">
+              <p
+                style={{ borderBottom: "1px solid #ccc" }}
+                className="flex justify-between py-[14px]"
+              >
                 <span className="text-dark">Area</span> {island.area} Acres
+              </p>
+              <p className="flex justify-between py-[14px]">
+                <span className="text-dark">Price</span>{" "}
+                {Number(island.price).toLocaleString()}$
+                {island.type === "rent" ? "/Night" : ""}
               </p>
             </div>
           </div>

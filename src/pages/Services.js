@@ -1,7 +1,8 @@
 import React from "react";
+// import PageTransition from "../components/PageTransition";
 
 const Services = () => {
-  return <div>Services</div>;
+  return <></>;
 };
 
 export default Services;
