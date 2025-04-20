@@ -95,7 +95,7 @@ export default function Testimonials() {
             effect="fade"
             fadeEffect={{ crossFade: true }}
             loop={true}
-            autoplay={{ delay: 700000, disableOnInteraction: false }}
+            autoplay={{ delay: 7000, disableOnInteraction: false }}
             navigation
             allowTouchMove={false}
             onSlideChange={(swiper) => {

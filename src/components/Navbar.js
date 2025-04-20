@@ -6,9 +6,15 @@ import mail from "../assets/social/mail.png";
 import linkin from "../assets/social/linkin.png";
 import github from "../assets/social/github.png";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleNavClick = (type) => {
+    const params = new URLSearchParams({ type });
+    navigate(`/islands?${params.toString()}`);
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
@@ -60,22 +66,22 @@ const Navbar = () => {
 
           <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[40px] tracking-wide">
             <li>
-              <Link
-                to="/island"
-                className="group relative inline-block overflow-hidden transition text-white"
+              <a
+                className="group relative inline-block overflow-hidden transition text-white cursor-pointer"
+                onClick={() => handleNavClick("rent")}
               >
                 Island For Rent
                 <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/island"
-                className="group relative inline-block overflow-hidden transition text-white"
+              <a
+                className="group relative inline-block overflow-hidden transition text-white cursor-pointer"
+                onClick={() => handleNavClick("sale")}
               >
                 Island For Sale
                 <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
-              </Link>
+              </a>
             </li>
           </ul>
 

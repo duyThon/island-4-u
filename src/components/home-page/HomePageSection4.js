@@ -96,7 +96,7 @@ const HomePageSection4 = () => {
               </div>
             </Link>
           </div>
-          <div className="hidden md:block md:col-span-2">
+          <div className="hidden md:order-3 md:block md:col-span-2">
             <img src={services2} />
           </div>
         </div>

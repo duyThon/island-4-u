@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import horizontal from "../../assets/home-bg/section2/horizontal-bg.jpg";
-import section2Island from "../../assets/home-bg/section2/section2-island.jpeg";
+import section2Island from "../../assets/home-bg/section2/section2-island.jpg";
 
 const HomePageSection2 = () => {
   return (
@@ -39,15 +39,12 @@ const HomePageSection2 = () => {
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-                <span className="font-roboto text-[12px] lg:[20px]">
+                <span className="font-roboto text-[12px] lg:text-[20px]">
                   Read More
                 </span>
               </div>
             </Link>
-            <img
-              className="w-[900px] md:pt-[20px] lg:pt-[60px]"
-              src={section2Island}
-            />
+            <img className=" md:pt-[20px] lg:pt-[60px]" src={section2Island} />
           </div>
         </div>
       </section>

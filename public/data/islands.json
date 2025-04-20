@@ -1,0 +1,223 @@
+[
+    {
+      "id": 1,
+      "name": "Fraser Island",
+      "location": "Australia",
+      "price": "54000000",
+      "type": "sale",
+      "status": "available",
+      "area": "74",
+      "services": ["Islands with Beaches", "Large Acreage", "Turn Key", "Income Potential", "Luxury Dining"],
+      "image": "/images/islands/fraser-island/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Emerald Bay",
+      "location": "Bahamas",
+      "price": "3700000",
+      "type": "sale",
+      "status": "available",
+      "area": "15",
+      "services": ["Private Dock", "Luxury Villa", "Electricity", "Internet"],
+      "image": "/images/islands/emerald-bay/1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Coconut Retreat",
+      "location": "Fiji",
+      "price": "2000",
+      "type": "rent",
+      "status": "available",
+      "area": "5",
+      "services": ["Snorkeling", "Private Beach", "Resort Services", "Meal Included"],
+      "image": "/images/islands/coconut-retreat/1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Blue Lagoon",
+      "location": "Maldives",
+      "price": "4500",
+      "type": "rent",
+      "status": "available",
+      "area": "3",
+      "services": ["Spa", "Infinity Pool", "Chef", "Snorkeling"],
+      "image": "/images/islands/blue-lagoon/1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Coral Point",
+      "location": "Philippines",
+      "price": "980000",
+      "type": "sale",
+      "status": "available",
+      "area": "12",
+      "services": ["Electricity", "Water Supply", "Jetty", "Tropical Forest"],
+      "image": "/images/islands/coral-point/1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Whispering Sands",
+      "location": "Indonesia",
+      "price": "1200",
+      "type": "rent",
+      "status": "available",
+      "area": "4",
+      "services": ["Cultural Tour", "Massage", "Kayak Rental", "Breakfast"],
+      "image": "/images/islands/whispering-sands/1.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Palm Haven",
+      "location": "Seychelles",
+      "price": "23000000",
+      "type": "sale",
+      "status": "sold",
+      "area": "22",
+      "services": ["Luxury Villa", "Spa", "Seaplane Access", "Private Pier"],
+      "image": "/images/islands/palm-haven/1.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Ocean Mist",
+      "location": "Thailand",
+      "price": "2800",
+      "type": "rent",
+      "status": "available",
+      "area": "6",
+      "services": ["Yoga Deck", "Boat Tour", "Vegan Menu", "Open Bar"],
+      "image": "/images/islands/ocean-mist/1.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Hidden Pearl",
+      "location": "Greece",
+      "price": "8600000",
+      "type": "sale",
+      "status": "available",
+      "area": "19",
+      "services": ["Historic Sites", "Olive Farm", "Private Chapel", "Mountain View"],
+      "image": "/images/islands/hidden-pearl/1.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Lagoon Breeze",
+      "location": "Hawaii",
+      "price": "7500",
+      "type": "rent",
+      "status": "available",
+      "area": "7",
+      "services": ["Volcano View", "Snorkeling", "Helicopter Tour", "Private Cook"],
+      "image": "/images/islands/lagoon-breeze/1.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Starfish Point",
+      "location": "Belize",
+      "price": "1900000",
+      "type": "sale",
+      "status": "available",
+      "area": "11",
+      "services": ["Diving", "Rainforest", "Wooden Cottages", "Jetty"],
+      "image": "/images/islands/starfish-point/1.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Sunset Key",
+      "location": "Florida",
+      "price": "12000",
+      "type": "rent",
+      "status": "available",
+      "area": "9",
+      "services": ["Sunset Cruise", "Golf Access", "Tennis Court", "Luxury Dining"],
+      "image": "/images/islands/sunset-key/1.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Mango Bay",
+      "location": "Sri Lanka",
+      "price": "5400000",
+      "type": "sale",
+      "status": "available",
+      "area": "13",
+      "services": ["Fishing", "Tea Plantation", "Beach Access", "Farm Land", "Golf Access"],
+      "image": "/images/islands/mango-bay/1.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Seaglass Cove",
+      "location": "New Zealand",
+      "price": "7000000",
+      "type": "sale",
+      "status": "available",
+      "area": "18",
+      "services": ["Secluded Caves", "Whale Watching", "Nature Trails", "Lighthouse"],
+      "image": "/images/islands/seaglass-cove/1.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Aurora Island",
+      "location": "Norway",
+      "price": "4800000",
+      "type": "sale",
+      "status": "available",
+      "area": "25",
+      "services": ["Northern Lights View", "Fireplace Cabins", "Boat Access", "Hiking"],
+      "image": "/images/islands/aurora-island/1.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Laguna Azul",
+      "location": "Mexico",
+      "price": "3000",
+      "type": "rent",
+      "status": "available",
+      "area": "6",
+      "services": ["Taco Bar", "Live Music", "Snorkeling", "Fiesta Night"],
+      "image": "/images/islands/laguna-azul/1.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Ivory Cay",
+      "location": "Bahamas",
+      "price": "10500000",
+      "type": "sale",
+      "status": "available",
+      "area": "14",
+      "services": ["Coral Reefs", "Deep Sea Fishing", "Luxury Bungalow", "Solar Panels"],
+      "image": "/images/islands/ivory-cay/1.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Mystic Isle",
+      "location": "Scotland",
+      "price": "4300000",
+      "type": "sale",
+      "status": "sold",
+      "area": "21",
+      "services": ["Castle Ruins", "Private Loch", "Foggy Views", "Sheep Farm"],
+      "image": "/images/islands/mystic-isle/1.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Pearl Haven",
+      "location": "Japan",
+      "price": "6200",
+      "type": "rent",
+      "status": "available",
+      "area": "4",
+      "services": ["Zen Garden", "Hot Springs", "Sushi Bar", "Cultural Tour"],
+      "image": "/images/islands/pearl-haven/1.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Tropic Isle",
+      "location": "Brazil",
+      "price": "960000",
+      "type": "sale",
+      "status": "available",
+      "area": "16",
+      "services": ["Beach Soccer", "Waterfall", "Palm Trees", "Sunset View"],
+      "image": "/images/islands/tropic-isle/1.jpg"
+    }
+  ]
+  
