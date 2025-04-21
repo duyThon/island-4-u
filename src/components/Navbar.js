@@ -42,7 +42,7 @@ const Navbar = () => {
               />
             </Link>
           </div>
-          <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[40px] tracking-wide">
+          <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[20px] lg:space-x-[40px] tracking-wide">
             <li>
               <a
                 className="group relative inline-block overflow-hidden transition text-white cursor-pointer"
@@ -63,7 +63,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[40px] tracking-wide">
+          <ul className="navbar-list hidden md:flex list-none flex-wrap items-center justify-center space-x-[20px] lg:space-x-[40px] tracking-wide">
             <li>
               <Link
                 to="/about"

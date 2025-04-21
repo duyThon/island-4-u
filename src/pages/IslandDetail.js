@@ -68,7 +68,7 @@ export default function IslandDetail() {
 
   return (
     <PageTransition>
-      <div className="h-[30vh] md:h-[60vh] overflow-hidden relative">
+      <div className="h-[60vh] overflow-hidden relative">
         <img src={island.image} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
         <div className="absolute inset-0 flex items-center justify-center text-white font-playfair text-[30px] md:text-[60px] lg:text-[80px]">
@@ -93,7 +93,7 @@ export default function IslandDetail() {
       </div>
 
       <div className="island-detail-container px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px] grid grid-cols-12 space-y-[50px] md:space-y-0 md:gap-[40px]">
-        <div className="col-span-12 md:col-span-5 lg:col-span-4 relative">
+        <div className="col-span-12 lg:col-span-5 lg:col-span-4 relative">
           <div className="grid grid-cols-3 md:sticky md:top-[150px]">
             <div className="col-span-1 text-dark text-[14px] md:text-[24px] font-roboto space-y-[10px]">
               <p>Location</p>
@@ -122,7 +122,7 @@ export default function IslandDetail() {
             </div>
           </div>
         </div>
-        <div className="col-span-12 md:col-span-7 lg:col-span-8">
+        <div className="col-span-12 lg:col-span-7 lg:col-span-8">
           <img src={img1} className="mb-[30px]" />
           <h2 className="text-center md:text-start text-dark text-[30px] md:text-[60px] font-playfair tracking-wide leading-none mb-[20px]">
             {island.name}
@@ -147,7 +147,7 @@ export default function IslandDetail() {
           Inquire About <br className="block md:hidden" /> This Island
         </h2>
         <div className="grid grid-cols-12 space-y-[40px]">
-          <div className="hidden md:block md:col-span-2 lg:col-span-3"></div>
+          <div className="hidden md:block md:col-span-1 lg:col-span-3"></div>
           <div className="col-span-12 md:col-span-10 lg:col-span-6 space-y-[40px]">
             <div className="grid grid-cols-2 gap-[20px] md:gap-[40px]">
               <input
@@ -177,10 +177,10 @@ export default function IslandDetail() {
               placeholder="Message"
             ></textarea>
 
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-center flex-col justify-center space-y-[20px] md:flex-row md:justify-between md:space-y-0">
               <div className="space-x-[10px] flex">
                 <input type="checkbox" name="agree" />
-                <p className="text-gray text-[8px] md:text-[20px] font-roboto">
+                <p className="text-gray text-[8px] md:text-[14px] lg:text-[20px] font-roboto">
                   I agree to the{" "}
                   <span className="underline underline-offset-4 cursor-pointer">
                     Privacy Policy.
@@ -192,7 +192,7 @@ export default function IslandDetail() {
               </button>
             </div>
           </div>
-          <div className="hidden md:block md:col-span-2 lg:col-span-3"></div>
+          <div className="hidden md:block md:col-span-1 lg:col-span-3"></div>
         </div>
       </div>
 

@@ -24,7 +24,7 @@ const HomePageSection3 = () => {
             <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide font-bold">
               FOR RENT
             </h3>
-            <h2 className="text-dark text-[40px] lg:text-[60px] font-playfair tracking-wide leading-none">
+            <h2 className="text-dark text-[30px] lg:text-[60px] font-playfair tracking-wide leading-none">
               Trending Islands
             </h2>
           </div>
@@ -43,7 +43,7 @@ const HomePageSection3 = () => {
             <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide font-bold">
               FOR SALE
             </h3>
-            <h2 className="text-dark text-[40px] lg:text-[60px] font-playfair tracking-wide leading-none">
+            <h2 className="text-dark text-[30px] lg:text-[60px] font-playfair tracking-wide leading-none">
               Trending Islands
             </h2>
           </div>

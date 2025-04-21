@@ -49,3 +49,14 @@ textarea {
     height: 80px !important;
   }
 }
+
+@media screen and (min-width: 40rem ) and (max-width: 64rem ){
+  .section6-input {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  textarea {
+    height: 80px !important;
+  }
+}

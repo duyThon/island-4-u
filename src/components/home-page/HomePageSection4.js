@@ -31,7 +31,7 @@ const HomePageSection4 = () => {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <Link to="/about">
-              <div className="text-dark flex items-center space-x-[5px] md:pt-[24px]">
+              <div className="text-dark flex items-center space-x-[5px] md:pt-[24px] hover:text-red">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-8 h-8 -rotate-90 scale-[0.5]"
@@ -74,8 +74,8 @@ const HomePageSection4 = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <Link to="/services">
-              <div className="text-dark flex items-center justify-end space-x-[5px] md:pt-[24px]">
+            <Link to="/about">
+              <div className="text-dark flex items-center justify-end space-x-[5px] md:pt-[24px] hover:text-red">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-8 h-8 -rotate-90 scale-[0.5]"
@@ -96,8 +96,8 @@ const HomePageSection4 = () => {
               </div>
             </Link>
           </div>
-          <div className="hidden md:order-3 md:block md:col-span-2">
-            <img src={services2} />
+          <div className="hidden md:order-3 md:block md:col-span-2 overflow-hidden">
+            <img className="object-cover" src={services2} />
           </div>
         </div>
       </div>
