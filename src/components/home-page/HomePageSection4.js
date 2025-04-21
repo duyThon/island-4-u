@@ -12,7 +12,7 @@ const HomePageSection4 = () => {
       <div className="section4 bg-white w-screen px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px] space-y-[50px] md:space-y-[100px]">
         <div className="section4-container-about grid grid-cols-12">
           <div className="hidden md:block md:col-span-2">
-            <img src={about1} />
+            <img className="object-cover" src={about1} />
           </div>
           <div className="col-span-12 md:col-span-5 px-[20px] md:px-[40px] lg:px-[60px] space-y-[24px] py-[24px] bg-sand">
             <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide lg:font-bold">

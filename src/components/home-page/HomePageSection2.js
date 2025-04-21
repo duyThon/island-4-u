@@ -7,7 +7,7 @@ const HomePageSection2 = () => {
   return (
     <>
       <section className="section2 bg-white w-screen px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px]">
-        <div className="section2-container grid grid-cols-12 gap-y-[20px] gap-x-0 md:gap-x-[40px] lg:gap-0 flex justify-start items-start">
+        <div className="section2-container grid grid-cols-12 gap-y-[20px] gap-x-0 md:gap-x-[40px] flex justify-start items-start">
           <div className="col-span-12 md:col-span-6 flex justify-start">
             <img className="w-[700px]" src={horizontal} />
           </div>
