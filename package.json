@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "18.x"
+  },
   "name": "ultims-island-4-u",
   "version": "0.1.0",
   "private": true,
