@@ -49,7 +49,7 @@ const Navbar = () => {
                 onClick={() => handleNavClick("rent")}
               >
                 Island For Rent
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 onClick={() => handleNavClick("sale")}
               >
                 Island For Sale
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
               </a>
             </li>
           </ul>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 className="group relative inline-block overflow-hidden transition text-white"
               >
                 About Us
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
               </Link>
             </li>
             <li>
@@ -79,7 +79,7 @@ const Navbar = () => {
                 className="group relative inline-block overflow-hidden transition text-white"
               >
                 Contact
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
               </Link>
             </li>
             {/* <li>
@@ -88,7 +88,7 @@ const Navbar = () => {
                 className="group relative inline-block overflow-hidden transition text-white"
               >
                 Services
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
               </Link>
             </li> */}
           </ul>
@@ -117,7 +117,7 @@ const Navbar = () => {
                   onClick={() => handleNavClick("rent")}
                 >
                   Island For Rent
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </a>
               </li>
               <li>
@@ -126,7 +126,7 @@ const Navbar = () => {
                   onClick={() => handleNavClick("sale")}
                 >
                   Island For Sale
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </a>
               </li>
             </ul>
@@ -140,7 +140,7 @@ const Navbar = () => {
                   className="group relative inline-block overflow-hidden transition text-white"
                 >
                   About Us
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
@@ -149,7 +149,7 @@ const Navbar = () => {
                   className="group relative inline-block overflow-hidden transition text-white"
                 >
                   Contact
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
               </li>
               {/* <li>
@@ -158,7 +158,7 @@ const Navbar = () => {
                   className="group relative inline-block overflow-hidden transition text-white"
                 >
                   Services
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
               </li> */}
             </ul>

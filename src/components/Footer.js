@@ -25,7 +25,7 @@ const Footer = () => {
                   className="group relative inline-block overflow-hidden transition text-white"
                 >
                   About Us
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
               </li>
               <li>
@@ -34,7 +34,7 @@ const Footer = () => {
                   className="group relative inline-block overflow-hidden transition text-white"
                 >
                   Contact
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
               </li>
               {/* <li>
@@ -43,23 +43,23 @@ const Footer = () => {
                   className="group relative inline-block overflow-hidden transition text-white"
                 >
                   Services
-                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full"></span>
                 </Link>
               </li> */}
             </ul>
           </div>
-          <div className="footer-mid font-playfair w-full flex justify-between items-center grid grid-cols-12 pt-[40px] lg:pt-[80px] space-y-[20px] md:space-y-0">
+          <div className="footer-mid font-playfair w-full flex justify-between items-center grid grid-cols-12 pt-[40px] space-y-[20px] md:space-y-0">
             <div className="footer-address col-span-12 md:col-span-4">
-              <div className="text-center md:text-start font-roboto text-mix text-[14px] lg:text-[22px]">
+              <div className="text-center md:text-start font-roboto text-mix text-[14px] lg:text-[18px]">
                 <div>Da Nang -</div> <div>117 Tran Van Tra</div> Hoa Vang, Hoa
                 Chau
               </div>
             </div>
             <div className="footer-info col-span-12 md:col-span-4">
-              <div className="text-center md:text-start">
+              <div className="text-center">
                 <div className="md:mb-[8px]">
                   <a
-                    className="text-white text-[28px] lg:text-[40px]"
+                    className="text-white text-[24px] lg:text-[30px]"
                     href="tel:0398185925"
                   >
                     039 8185 925
@@ -67,17 +67,17 @@ const Footer = () => {
                 </div>
                 <span className="group relative inline-block overflow-hidden transition">
                   <a
-                    className="text-mix font-roboto text-[14px] lg:text-[22px]"
+                    className="text-mix font-roboto text-[14px] lg:text-[18px]"
                     href="mailto:thongduy0512@gmail.com"
                   >
                     thongduy0512@gmail.com
                   </a>
-                  <span className="absolute left-0 bottom-0 h-[2px] w-full bg-mix transition-all duration-500 group-hover:w-0"></span>
+                  <span className="absolute left-0 bottom-0 h-[1px] w-full bg-mix transition-all duration-500 group-hover:w-0"></span>
                 </span>
               </div>
             </div>
             <div className="footer-quote col-span-12 md:col-span-4 text-center md:text-end">
-              <div className="text-[28px] lg:text-[30px] text-mix">
+              <div className="text-[24px] lg:text-[26px] text-mix">
                 <div className="text-white">Let's go on a trip</div> of your
                 dream
               </div>
@@ -85,7 +85,7 @@ const Footer = () => {
           </div>
           <div className="footer-end w-full flex justify-between items-center grid grid-cols-12 space-y-[20px] md:space-y-0">
             <div className="footer-copyright col-span-12 order-2 md:order-1 md:col-span-8 pt-[20px] md:pt-0">
-              <div className="text-center md:text-start font-roboto text-mix text-[14px] lg:text-[22px]">
+              <div className="text-center md:text-start font-roboto text-mix text-[12px] lg:text-[16px]">
                 NGUYEN DUY THONG © 2025. All rights reserved.
               </div>
             </div>

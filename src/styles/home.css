@@ -21,7 +21,7 @@
 }
 
 textarea {
-  height: 130px !important;
+  height: 100px !important;
 }
 
 .section6-input {
@@ -30,8 +30,8 @@ textarea {
   border: none;
   border-bottom: 1px solid #ccc;
   width: 100%;
-  font-size: 30px;
-  height: 80px;
+  font-size: 22px;
+  height: 60px;
   background-color: transparent;
 }
 
@@ -46,7 +46,7 @@ textarea {
   }
 
   textarea {
-    height: 80px !important;
+    height: 60px !important;
   }
 }
 

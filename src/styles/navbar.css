@@ -1,5 +1,5 @@
 .navbar-list {
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 500;
     color: white;
     font-family: 'Playfair Display';
@@ -11,6 +11,6 @@
 
 @media screen and (min-width: 40rem ) and (max-width: 64rem ){
     .navbar-list {
-        font-size: 18px;
+        font-size: 14px;
     }
 }

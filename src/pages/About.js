@@ -17,21 +17,21 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-container px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px]">
+      <div className="about-container px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[140px]">
         <div className="pb-[30px] space-y-[20px] lg:py-[60px] md:space-y-[30px]">
           <div className="flex items-center justify-start space-x-[20px] ">
             <div className="border-b-2 border-[#d7b184] w-[50px] h-0"></div>
-            <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide lg:font-bold">
+            <h3 className="text-dark md:text-[16px] lg:text-[16px] font-playfair tracking-wide lg:font-bold">
               Who We Are
             </h3>
           </div>
-          <h2 className="text-dark text-[40px] lg:text-[60px] font-playfair tracking-wide leading-none capitalize">
+          <h2 className="text-dark text-[40px] font-playfair tracking-wide leading-none capitalize">
             Curators of Paradise
           </h2>
         </div>
         <div className="grid grid-cols-12 gap-[20px] md:gap-[40px] lg:gap-[80px]">
           <div className="col-span-12 md:col-span-4 lg:col-span-6 space-y-[30px] lg:space-y-[60px]">
-            <p className="text-gray font-roboto text-[12px] lg:text-[20px] tracking-wider">
+            <p className="text-gray font-roboto text-[12px] lg:text-[16px] tracking-wider">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -40,21 +40,21 @@ const About = () => {
                 <img src={img1} className="w-full h-full object-cover" />
               </div>
               <div className="space-y-[10px]">
-                <h3 className="text-dark md:text-[20px] lg:text-[26px] font-playfair tracking-widest lg:font-bold">
+                <h3 className="text-dark md:text-[20px] lg:text-[22px] font-playfair tracking-widest lg:font-bold">
                   Nguyen Duy Thong
                 </h3>
-                <p className="text-gray font-roboto text-[14px] lg:text-[22px] tracking-wide">
+                <p className="text-gray font-roboto text-[14px] lg:text-[16px] tracking-wide">
                   CEO Director
                 </p>
               </div>
             </div>
-            {/* <h2 className="text-dark text-[40px] lg:text-[60px] font-playfair tracking-wide leading-none">
+            {/* <h2 className="text-dark text-[40px] lg:text-[50px] font-playfair tracking-wide leading-none">
               Exploring Exotic <br /> Destinations
             </h2> */}
           </div>
           <div className="col-span-12 md:col-span-8 lg:col-span-6 space-x-0 space-y-[20px] md:space-x-[60px] md:space-y-0 grid grid-cols-1 md:grid-cols-2">
             <div className="space-y-[40px]">
-              <p className="text-gray font-roboto text-[12px] lg:text-[20px] tracking-wider">
+              <p className="text-gray font-roboto text-[12px] lg:text-[16px] tracking-wider">
                 <span className="drop-cap text-dark font-playfair text-[30px] lg:text-[60px] leading-none">
                   L
                 </span>
@@ -62,7 +62,7 @@ const About = () => {
                 text. It has roots in a piece of classical Latin literature from
                 45 BC, making it over 2000 years old.
               </p>
-              <p className="text-gray font-roboto text-[12px] lg:text-[20px] tracking-wider">
+              <p className="text-gray font-roboto text-[12px] lg:text-[16px] tracking-wider">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore veritatis et quasi architecto beatae
@@ -70,12 +70,12 @@ const About = () => {
               </p>
             </div>
             <div className="space-y-[40px]">
-              <p className="text-gray font-roboto text-[12px] lg:text-[20px] tracking-wider">
+              <p className="text-gray font-roboto text-[12px] lg:text-[16px] tracking-wider">
                 On the other hand, we denounce with righteous indignation and
                 dislike men who are so beguiled and demoralized by the charms of
                 pleasure of the moment.
               </p>
-              <p className="text-gray font-roboto text-[12px] lg:text-[20px] tracking-wider">
+              <p className="text-gray font-roboto text-[12px] lg:text-[16px] tracking-wider">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
                 quae ab illo inventore.
@@ -86,21 +86,21 @@ const About = () => {
         <div className="py-[30px] pt-[50px] md:py-[60px] md:pt-[100px] space-y-[20px] md:space-y-[30px]">
           <div className="flex items-center justify-center space-x-[20px] ">
             <div className="border-b-2 border-[#d7b184] w-[50px] h-0"></div>
-            <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide lg:font-bold">
+            <h3 className="text-dark md:text-[16px] lg:text-[16px] font-playfair tracking-wide lg:font-bold">
               What We Do
             </h3>
             <div className="border-b-2 border-[#d7b184] w-[50px] h-0"></div>
           </div>
-          <h2 className="text-dark text-[40px] lg:text-[60px] font-playfair tracking-wide leading-none capitalize text-center">
+          <h2 className="text-dark text-[40px] font-playfair tracking-wide leading-none capitalize text-center">
             Exploring Exotic Destinations
           </h2>
         </div>
         <div className="grid grid-cols-12 lg:px-[100px]">
-          <div className="col-span-12 md:col-span-7 md:pl-[50px] lg:pl-[100px] space-y-[20px]">
-            <div className="text-gray text-center md:text-start text-[18px] lg:text-[36px] font-playfair tracking-wider leading-none capitalize">
+          <div className="col-span-12 md:col-span-7 md:pl-[50px] lg:pl-0 space-y-[20px]">
+            <div className="text-gray text-center md:text-start text-[18px] lg:text-[30px] font-playfair tracking-wider leading-none capitalize">
               CREATE YOUR DREAM VACATION <br /> WITH ISLAND LUXURY
             </div>
-            <p className="text-gray font-roboto text-[12px] lg:text-[20px] tracking-wider md:w-5/6">
+            <p className="text-gray font-roboto text-[12px] lg:text-[16px] tracking-wider md:w-5/6">
               At Island Luxury, helping you find the perfect vacation retreat is
               just the beginning. We're dedicated to making your tropical dreams
               a reality, whether that means arranging a shipwreck dive or
@@ -113,28 +113,28 @@ const About = () => {
           </div>
           <div className="md:col-span-5 col-span-12 pt-[40px] md:pt-0 space-x-[60px]">
             <div className="md:space-x-[60px] flex">
-              <div className=" border-l-2 border-[#d7b184] w-0 h-[200px] lg:h-[300px] mt-[80px]"></div>
+              <div className=" border-l-2 border-[#d7b184] w-0 h-[200px] lg:h-[250px] mt-[80px]"></div>
               <div className="space-y-[30px]">
-                <h3 className="text-gray md:text-[16px] lg:text-[20px] font-playfair tracking-wide lg:font-bold capitalize">
+                <h3 className="text-gray md:text-[16px] font-playfair tracking-wide lg:font-bold capitalize">
                   our core values
                 </h3>
                 <div className="space-y-[30px] pl-[60px] md:pl-0">
-                  <div className="text-dark text-[20px] lg:text-[36px] font-playfair tracking-wider leading-none capitalize">
+                  <div className="text-dark text-[20px] lg:text-[28px] font-playfair tracking-wider leading-none capitalize">
                     AUTHENTICITY
                   </div>
-                  <div className="text-dark text-[20px] lg:text-[36px] font-playfair tracking-wider leading-none capitalize">
+                  <div className="text-dark text-[20px] lg:text-[28px] font-playfair tracking-wider leading-none capitalize">
                     PROFESSIONALISM
                   </div>
-                  <div className="text-dark text-[20px] lg:text-[36px] font-playfair tracking-wider leading-none capitalize">
+                  <div className="text-dark text-[20px] lg:text-[28px] font-playfair tracking-wider leading-none capitalize">
                     TRANSPARENCY
                   </div>
-                  <div className="text-dark text-[20px] lg:text-[36px] font-playfair tracking-wider leading-none capitalize">
+                  <div className="text-dark text-[20px] lg:text-[28px] font-playfair tracking-wider leading-none capitalize">
                     EXCEPTIONALISM
                   </div>
-                  <div className="text-dark text-[20px] lg:text-[36px] font-playfair tracking-wider leading-none capitalize">
+                  <div className="text-dark text-[20px] lg:text-[28px] font-playfair tracking-wider leading-none capitalize">
                     GROWTH
                   </div>
-                  <div className="text-dark text-[20px] lg:text-[36px] font-playfair tracking-wider leading-none capitalize">
+                  <div className="text-dark text-[20px] lg:text-[28px] font-playfair tracking-wider leading-none capitalize">
                     COMMUNITY
                   </div>
                 </div>
@@ -145,10 +145,10 @@ const About = () => {
       </div>
       <HomePageSection2 />
 
-      <div className=" w-screen h-[220px] lg:h-[390px] overflow-hidden relative">
+      <div className=" w-screen h-[220px] lg:h-[300px] overflow-hidden relative">
         <img src={img2} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="absolute inset-y-0 left-[30px] right-[30px] md:left-[50px] md:right-[50px] lg:left-[100px] lg:right-[100px] flex items-center justify-center text-white text-[30px] lg:text-[60px] font-playfair leading-none">
+        <div className="absolute inset-y-0 left-[30px] right-[30px] md:left-[50px] md:right-[50px] lg:left-[100px] lg:right-[100px] flex items-center justify-center text-white text-[26px] lg:text-[40px] font-playfair leading-none">
           <div className="md:flex items-center justify-center md:justify-between w-full">
             <h2>
               Making memories: island owner <br className="hidden md:block" />{" "}
@@ -161,8 +161,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-screen px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px]">
-        <h2 className="text-dark text-[30px] lg:text-[60px] font-playfair tracking-wide leading-none text-center">
+      <div className="w-screen px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[140px]">
+        <h2 className="text-dark text-[30px] lg:text-[40px] font-playfair tracking-wide leading-none text-center">
           Leave A Message
         </h2>
         <div className="grid grid-cols-12 space-y-[40px]">
@@ -197,7 +197,7 @@ const About = () => {
             ></textarea>
 
             <div className="w-full flex items-center justify-center">
-              <button className="bg-red font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] py-[10px] md:py-[20px] tracking-wide shadow-lg hover:bg-opacity-80 transition">
+              <button className="bg-red font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] lg:px-[30px] py-[10px] md:py-[20px] lg:py-[16px] tracking-wide shadow-lg hover:bg-opacity-80 transition">
                 get in touch
               </button>
             </div>

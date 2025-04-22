@@ -26,6 +26,10 @@ const IslandsList = ({ dataIslandDetail }) => {
   const [loadingMore, setLoadingMore] = useState(false);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [type]);
+
+  useEffect(() => {
     const loadData = async () => {
       const data = await fetchIslands();
       setIslandsData(data);
@@ -37,6 +41,7 @@ const IslandsList = ({ dataIslandDetail }) => {
         setFilteredIslands(handleSearch(data, {}));
       }
     };
+
     loadData();
   }, [type, keyword]);
 
@@ -65,16 +70,16 @@ const IslandsList = ({ dataIslandDetail }) => {
       <div className="h-[60vh] overflow-hidden relative">
         <img src={img1} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black bg-opacity-40" />
-        <div className="absolute inset-0 flex items-center justify-center text-white font-playfair text-[30px] md:text-[40px] lg:text-[80px]">
+        <div className="absolute absolute inset-y-0 lg:left-0 left-[30px] lg:right-0 right-[30px] text-center flex items-center justify-center text-white font-playfair text-[42px] md:text-[40px] lg:text-[60px]">
           {type === "rent"
             ? "Find Your Next Island Vacation"
             : "Find Your Private Island"}
         </div>
       </div>
 
-      <div className="islands-list-container grid grid-cols-12 md:gap-[40px] px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px]">
+      <div className="islands-list-container grid grid-cols-12 md:gap-[40px] px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[140px]">
         <div className="islands-filter col-span-12 lg:col-span-3 relative">
-          <div className="islands-filter-container md:sticky md:top-[150px]">
+          <div className="islands-filter-container md:sticky md:top-[120px]">
             <SearchFilter
               islandsData={islandsData}
               onFilterChange={onFilterChange}

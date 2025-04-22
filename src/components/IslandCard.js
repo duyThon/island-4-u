@@ -27,36 +27,36 @@ const IslandCard = ({ island, inDetailPage = false }) => {
             inDetailPage ? "bg-white" : "bg-sky"
           } overflow-hidden shadow-md hover:shadow-lg transition-all duration-300`}
         >
-          <div className="overflow-hidden h-[400px] relative">
+          <div className="overflow-hidden h-[250px] relative">
             <img
               src={island.image}
               className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
             />
           </div>
-          <div className="p-[20px] md:p-[40px]">
-            <h3 className="text-[30px] text-dark font-playfair tracking-wider leading-none hover:text-red transition-colors duration-300 pb-[20px]">
+          <div className="p-[20px] md:p-[30px]">
+            <h3 className="text-[24px] text-dark font-playfair tracking-wider leading-none hover:text-red transition-colors duration-300 pb-[16px]">
               {island.name}
             </h3>
-            <div className="island-detail text-[22px] text-gray font-roboto">
-              <p className="flex justify-start items-center">
-                <img src={location} className="w-[14px] mr-[10px]" />
+            <div className="island-detail text-[14px] text-gray font-roboto">
+              <p className="flex justify-start items-center text-[16px]">
+                <img src={location} className="w-[12px] mr-[4px]" />
                 {island.location}
               </p>
               <p
                 style={{ borderBottom: "1px solid #ccc" }}
-                className="flex justify-between py-[14px]"
+                className="flex justify-between py-[8px]"
               >
                 <span className="text-dark">Type</span> For {island.type}
               </p>
               <p
                 style={{ borderBottom: "1px solid #ccc" }}
-                className="flex justify-between py-[14px]"
+                className="flex justify-between py-[8px]"
               >
                 <span className="text-dark">Area</span> {island.area} Acres
               </p>
-              <p className="flex justify-between py-[14px]">
-                <span className="text-dark">Price</span>{" "}
-                {Number(island.price).toLocaleString()}$
+              <p className="flex justify-between py-[8px]">
+                <span className="text-dark">Price</span> ${" "}
+                {Number(island.price).toLocaleString()}
                 {island.type === "rent" ? "/Night" : ""}
               </p>
             </div>

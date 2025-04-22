@@ -18,7 +18,7 @@ const HomePageSection3 = () => {
 
   return (
     <>
-      <section className="section3 w-screen px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[100px] bg-sky">
+      <section className="section3 w-screen px-[30px] py-[50px] md:px-[50px] md:py-[80px] lg:p-[140px] bg-sky">
         <div className="section3-container">
           <div className="flex flex-col justify-center items-center space-y-[24px]">
             <h3 className="text-dark md:text-[16px] lg:text-[20px] font-playfair tracking-wide font-bold">
@@ -34,7 +34,7 @@ const HomePageSection3 = () => {
             ))}
           </div>
           <div className="w-full flex justify-center pt-[50px]">
-            <button className="bg-red font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] py-[10px] md:py-[20px] tracking-wide shadow-lg hover:bg-opacity-80 transition">
+            <button className="bg-red font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] lg:px-[30px] py-[10px] md:py-[20px] lg:py-[16px] tracking-wide shadow-lg hover:bg-opacity-80 transition">
               DISCOVER MORE
             </button>
           </div>
@@ -53,7 +53,7 @@ const HomePageSection3 = () => {
             ))}
           </div>
           <div className="w-full flex justify-center pt-[50px]">
-            <button className="bg-red font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] py-[10px] md:py-[20px] tracking-wide shadow-lg hover:bg-opacity-80 transition">
+            <button className="bg-red font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] lg:px-[30px] py-[10px] md:py-[20px] lg:py-[16px] tracking-wide shadow-lg hover:bg-opacity-80 transition">
               DISCOVER MORE
             </button>
           </div>

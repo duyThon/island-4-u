@@ -61,7 +61,7 @@ export default function HeroSection() {
         <h1
           style={{ textShadow: "0px 2px 6px #000" }}
           ref={titleRef}
-          className="text-[30px] md:text-[60px] lg:text-[120px] font-playfair mb-2 md:mb-4"
+          className="text-[30px] md:text-[60px] lg:text-[100px] font-playfair mb-2 md:mb-4"
         >
           {renderText("Find Your Private Island")}
         </h1>
@@ -74,7 +74,7 @@ export default function HeroSection() {
         </h2>
         <button
           ref={buttonRef}
-          className="bg-primary font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] py-[10px] md:py-[20px] tracking-wide shadow-lg hover:bg-opacity-80 transition"
+          className="bg-primary font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[50px] lg:px-[30px] py-[10px] md:py-[20px] lg:py-[16px] tracking-wide shadow-lg hover:bg-opacity-80 transition"
         >
           Discover More
         </button>

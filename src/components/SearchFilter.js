@@ -326,7 +326,7 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
 
       {/* Desktop UI */}
       <div className="hidden md:block">
-        <div className="space-y-[40px]">
+        <div className="space-y-[26px]">
           {/* Keyword Input */}
           <input
             type="text"
@@ -340,7 +340,7 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
           <div>
             <div
               onClick={() => toggleDropdown("type")}
-              className={`flex justify-between items-center text-[30px] font-roboto cursor-pointer ${
+              className={`flex justify-between items-center text-[24px] font-roboto cursor-pointer ${
                 sortType ? "text-dark" : "text-gray"
               }`}
             >
@@ -373,13 +373,13 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
               className="overflow-hidden h-0 opacity-0"
             >
               <div
-                className="p-[14px] font-roboto text-[24px] text-gray cursor-pointer hover:text-red"
+                className="p-[14px] font-roboto text-[18px] text-gray cursor-pointer hover:text-red"
                 onClick={() => handleSortSelect("type", "rent")}
               >
                 Islands For Rent
               </div>
               <div
-                className="p-[14px] font-roboto text-[24px] text-gray cursor-pointer hover:text-red"
+                className="p-[14px] font-roboto text-[18px] text-gray cursor-pointer hover:text-red"
                 onClick={() => handleSortSelect("type", "sale")}
               >
                 Islands For Sale
@@ -391,7 +391,7 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
           <div>
             <div
               onClick={() => toggleDropdown("area")}
-              className={`flex justify-between items-center text-[30px] font-roboto cursor-pointer ${
+              className={`flex justify-between items-center text-[24px] font-roboto cursor-pointer ${
                 sortArea ? "text-dark" : "text-gray"
               }`}
             >
@@ -424,13 +424,13 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
               className="overflow-hidden h-0 opacity-0"
             >
               <div
-                className="p-[14px] font-roboto text-[24px] text-gray cursor-pointer hover:text-red"
+                className="p-[14px] font-roboto text-[18px] text-gray cursor-pointer hover:text-red"
                 onClick={() => handleSortSelect("area", "asc")}
               >
                 Low to High
               </div>
               <div
-                className="p-[14px] font-roboto text-[24px] text-gray cursor-pointer hover:text-red"
+                className="p-[14px] font-roboto text-[18px] text-gray cursor-pointer hover:text-red"
                 onClick={() => handleSortSelect("area", "desc")}
               >
                 High to Low
@@ -442,7 +442,7 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
           <div>
             <div
               onClick={() => toggleDropdown("price")}
-              className={`flex justify-between items-center text-[30px] font-roboto cursor-pointer ${
+              className={`flex justify-between items-center text-[24px] font-roboto cursor-pointer ${
                 sortPrice ? "text-dark" : "text-gray"
               }`}
             >
@@ -474,13 +474,13 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
               className="overflow-hidden h-0 opacity-0"
             >
               <div
-                className="p-[14px] font-roboto text-[24px] text-gray cursor-pointer hover:text-red"
+                className="p-[14px] font-roboto text-[18px] text-gray cursor-pointer hover:text-red"
                 onClick={() => handleSortSelect("price", "asc")}
               >
                 Low to High
               </div>
               <div
-                className="p-[14px] font-roboto text-[24px] text-gray cursor-pointer hover:text-red"
+                className="p-[14px] font-roboto text-[18px] text-gray cursor-pointer hover:text-red"
                 onClick={() => handleSortSelect("price", "desc")}
               >
                 High to Low
@@ -491,7 +491,7 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
           {/* Service Filters */}
           <div>
             <span
-              className={`text-[30px] font-roboto ${
+              className={`text-[24px] font-roboto ${
                 selectedServices.length > 0 ? "text-dark" : "text-gray"
               }`}
             >
@@ -501,7 +501,7 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
               {servicesList.map((service) => (
                 <label
                   key={service}
-                  className="flex items-center gap-[10px] py-[6px] font-roboto text-[24px] text-gray cursor-pointer hover:text-red"
+                  className="flex items-center gap-[6px] py-[10px] font-roboto text-[18px] text-gray leading-none cursor-pointer hover:text-red"
                 >
                   <input
                     className="accent-red w-[20px] h-[20px] cursor-pointer"
@@ -516,18 +516,18 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
           </div>
 
           {/* Buttons */}
-          <div className="flex justify-between items-center mt-[40px]">
+          <div className="flex justify-start space-x-[60px] lg:space-x-0 lg:justify-between items-center mt-[40px]">
             <button
               onClick={clearFilters}
-              className="font-roboto text-[24px] text-gray cursor-pointer hover:text-red flex items-center group"
+              className="font-roboto text-[16px] text-gray cursor-pointer hover:text-red flex items-center group"
             >
               <svg
                 className="fill-gray group-hover:fill-red"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
-                width="25"
-                height="25"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
               >
                 <path d="M 10.806641 2 C 10.289641 2 9.7956875 2.2043125 9.4296875 2.5703125 L 9 3 L 4 3 A 1.0001 1.0001 0 1 0 4 5 L 20 5 A 1.0001 1.0001 0 1 0 20 3 L 15 3 L 14.570312 2.5703125 C 14.205312 2.2043125 13.710359 2 13.193359 2 L 10.806641 2 z M 4.3652344 7 L 5.8925781 20.263672 C 6.0245781 21.253672 6.877 22 7.875 22 L 16.123047 22 C 17.121047 22 17.974422 21.254859 18.107422 20.255859 L 19.634766 7 L 4.3652344 7 z"></path>
@@ -536,7 +536,7 @@ const SearchFilter = ({ onFilterChange, islandsData }) => {
             </button>
             <button
               onClick={handleSearchClick}
-              className="bg-red font-roboto font-600 uppercase text-[16px] text-white px-[25px] md:px-[30px] py-[10px] md:py-[10px] tracking-wide shadow-lg hover:bg-opacity-80 transition"
+              className="bg-red font-roboto  uppercase text-[12px] text-white px-[25px] md:px-[30px] py-[10px] md:py-[10px] tracking-wide shadow-lg hover:bg-opacity-80 transition"
             >
               Search
             </button>
